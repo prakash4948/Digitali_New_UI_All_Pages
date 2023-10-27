@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="10" passed="8" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-10-19T14:26:13 IST" name="Default suite" finished-at="2023-10-19T14:43:52 IST" duration-ms="1058953">
+    <groups>
+    </groups>
+    <test started-at="2023-10-19T14:26:13 IST" name="Default test" finished-at="2023-10-19T14:43:52 IST" duration-ms="1058953">
+      <class name="New.UI">
+        <test-method signature="About_us()[pri:0, instance:New.UI@2034b64c]" started-at="2023-10-19T14:26:13 IST" name="About_us" finished-at="2023-10-19T14:28:53 IST" duration-ms="160121" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- About_us -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:New.UI@2034b64c]" started-at="2023-10-19T14:28:53 IST" name="tearDown" finished-at="2023-10-19T14:28:53 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="Add_Content()[pri:0, instance:New.UI@2034b64c]" started-at="2023-10-19T14:28:53 IST" name="Add_Content" finished-at="2023-10-19T14:29:18 IST" duration-ms="25021" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[normalize-space()='CREDENTIALS']"}
+  (Session info: MicrosoftEdge=117.0.2045.60)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [892913cad3627d74aef65bf0a6f199c0, findElement {using=xpath, value=//div[normalize-space()='CREDENTIALS']}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 117.0.2045.60, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:56145}, msedge: {msedgedriverVersion: 117.0.2045.36 (7e3a0633c58a..., userDataDir: C:\Users\praka\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56145/devtoo..., se:cdpVersion: 117.0.2045.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 892913cad3627d74aef65bf0a6f199c0]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[normalize-space()='CREDENTIALS']"}
+  (Session info: MicrosoftEdge=117.0.2045.60)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [892913cad3627d74aef65bf0a6f199c0, findElement {using=xpath, value=//div[normalize-space()='CREDENTIALS']}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 117.0.2045.60, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:56145}, msedge: {msedgedriverVersion: 117.0.2045.36 (7e3a0633c58a..., userDataDir: C:\Users\praka\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56145/devtoo..., se:cdpVersion: 117.0.2045.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 892913cad3627d74aef65bf0a6f199c0
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at New.UI.Add_Content(UI.java:3525)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Add_Content -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:New.UI@2034b64c]" started-at="2023-10-19T14:29:18 IST" name="tearDown" finished-at="2023-10-19T14:29:18 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="Blogs()[pri:0, instance:New.UI@2034b64c]" started-at="2023-10-19T14:29:18 IST" name="Blogs" finished-at="2023-10-19T14:30:14 IST" duration-ms="56413" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Blogs -->
+        <test-method signature="Collection_List_Page()[pri:0, instance:New.UI@2034b64c]" started-at="2023-10-19T14:30:14 IST" name="Collection_List_Page" finished-at="2023-10-19T14:31:40 IST" duration-ms="85428" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Collection_List_Page -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:New.UI@2034b64c]" started-at="2023-10-19T14:30:14 IST" name="tearDown" finished-at="2023-10-19T14:30:14 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:New.UI@2034b64c]" started-at="2023-10-19T14:31:40 IST" name="tearDown" finished-at="2023-10-19T14:31:40 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="Collection_detail_page()[pri:0, instance:New.UI@2034b64c]" started-at="2023-10-19T14:31:40 IST" name="Collection_detail_page" finished-at="2023-10-19T14:34:01 IST" duration-ms="140956" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Collection_detail_page -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:New.UI@2034b64c]" started-at="2023-10-19T14:34:01 IST" name="tearDown" finished-at="2023-10-19T14:34:01 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="Earn_Reward_Points()[pri:0, instance:New.UI@2034b64c]" started-at="2023-10-19T14:34:01 IST" name="Earn_Reward_Points" finished-at="2023-10-19T14:35:36 IST" duration-ms="95489" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Earn_Reward_Points -->
+        <test-method signature="FAQ()[pri:0, instance:New.UI@2034b64c]" started-at="2023-10-19T14:35:36 IST" name="FAQ" finished-at="2023-10-19T14:38:42 IST" duration-ms="185721" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FAQ -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:New.UI@2034b64c]" started-at="2023-10-19T14:35:36 IST" name="tearDown" finished-at="2023-10-19T14:35:36 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:New.UI@2034b64c]" started-at="2023-10-19T14:38:42 IST" name="tearDown" finished-at="2023-10-19T14:38:42 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="Home_Page()[pri:0, instance:New.UI@2034b64c]" started-at="2023-10-19T14:38:42 IST" name="Home_Page" finished-at="2023-10-19T14:40:29 IST" duration-ms="107557" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <a class="btn bg-white text-black text-md font-medium bg-blue-600 hover:bg-zinc-200 w-full mb-4 sm:w-auto sm:mb-0 px-8 py-4 rounded whitespace-nowrap" href="/blog" style="background: red; border: 4px solid red;">...</a> is not clickable at point (1189, 29). Other element would receive the click: <a type="button" class="relative h-12 hidden md:block text-black bg-gradient-to-r from-yellow-500 via-zinc-100 to-yellow-500 shadow-md hover:bg-blue-800 font-semibold leading-7 rounded-lg text-lg px-8 py-2 text-center mr-3 ml-5 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 nav-btn-reward" href="/earn-reward-points">...</a>
+  (Session info: MicrosoftEdge=117.0.2045.60)
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [7e6b640ea0a3467bd68881066bba160a, clickElement {id=0B557B6707EDAB33957153CCDDDADB00_element_13396}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 117.0.2045.60, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:56961}, msedge: {msedgedriverVersion: 117.0.2045.36 (7e3a0633c58a..., userDataDir: C:\Users\praka\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56961/devtoo..., se:cdpVersion: 117.0.2045.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: msedge on windows (7e6b640ea0a3467bd68881066bba160a)] -> xpath: //a[normalize-space()='View All']]
+Session ID: 7e6b640ea0a3467bd68881066bba160a]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a class="btn bg-white text-black text-md font-medium bg-blue-600 hover:bg-zinc-200 w-full mb-4 sm:w-auto sm:mb-0 px-8 py-4 rounded whitespace-nowrap" href="/blog" style="background: red; border: 4px solid red;">...</a> is not clickable at point (1189, 29). Other element would receive the click: <a type="button" class="relative h-12 hidden md:block text-black bg-gradient-to-r from-yellow-500 via-zinc-100 to-yellow-500 shadow-md hover:bg-blue-800 font-semibold leading-7 rounded-lg text-lg px-8 py-2 text-center mr-3 ml-5 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 nav-btn-reward" href="/earn-reward-points">...</a>
+  (Session info: MicrosoftEdge=117.0.2045.60)
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [7e6b640ea0a3467bd68881066bba160a, clickElement {id=0B557B6707EDAB33957153CCDDDADB00_element_13396}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 117.0.2045.60, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:56961}, msedge: {msedgedriverVersion: 117.0.2045.36 (7e3a0633c58a..., userDataDir: C:\Users\praka\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56961/devtoo..., se:cdpVersion: 117.0.2045.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: msedge on windows (7e6b640ea0a3467bd68881066bba160a)] -> xpath: //a[normalize-space()='View All']]
+Session ID: 7e6b640ea0a3467bd68881066bba160a
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:242)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+at New.UI.Home_Page(UI.java:805)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Home_Page -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:New.UI@2034b64c]" started-at="2023-10-19T14:40:29 IST" name="tearDown" finished-at="2023-10-19T14:40:29 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="Leaderboard()[pri:0, instance:New.UI@2034b64c]" started-at="2023-10-19T14:40:29 IST" name="Leaderboard" finished-at="2023-10-19T14:41:49 IST" duration-ms="79627" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Leaderboard -->
+        <test-method signature="Privacy()[pri:0, instance:New.UI@2034b64c]" started-at="2023-10-19T14:41:49 IST" name="Privacy" finished-at="2023-10-19T14:43:52 IST" duration-ms="122537" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Privacy -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:New.UI@2034b64c]" started-at="2023-10-19T14:41:49 IST" name="tearDown" finished-at="2023-10-19T14:41:49 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:New.UI@2034b64c]" started-at="2023-10-19T14:43:52 IST" name="tearDown" finished-at="2023-10-19T14:43:52 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- New.UI -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
