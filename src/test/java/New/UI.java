@@ -21,17 +21,16 @@ public class UI {
 
 	// ------------------------------------------------------------
 	@Test
-	public void Home_Page() throws InterruptedException {
-		System.setProperty("webdriver.edge.driver",
-				"C:\\Users\\praka\\Downloads\\edgedriver_win64 (2)\\msedgedriver.exe");
-		// System.setProperty("webdriver.edge.driver",
+	public void Login_Page() throws InterruptedException {// username PRAKASH
+		System.setProperty("webdriver.edge.driver","C:\\Users\\praka\\Downloads\\edgedriver_win64 (3)\\msedgedriver.exe");
+    	//"C:\Users\praka\Downloads\edgedriver_win64 (3)\msedgedriver.exe"
 		// "C:\\Users\\praka\\Downloads\\edgedriver_win64 (1)\\msedgedriver.exe");
 
 		// up casting
 		WebDriver driver = new EdgeDriver();
 
 		// get URL
-		driver.get("https://digitali.xyz/");
+		driver.get("https://api-dev.hivepro.in:10443/artemis/artemis-dev-v2-1/#/auth/login");
 		Thread.sleep(1000);
 		driver.manage().deleteAllCookies();
 
@@ -40,16 +39,16 @@ public class UI {
 		Thread.sleep(1000);
 
 		// locate digital logo
-		WebElement digitali_logo = driver.findElement(By.xpath("//img[@alt='Digitali Logo']"));
+		WebElement login_page = driver.findElement(By.xpath("//img[@alt='Digitali Logo']"));
 
 		// to highlight the digitali_logo
 		JavascriptExecutor jse = (JavascriptExecutor) driver;
 		jse.executeScript("arguments[0].setAttribute('style','background: red; border: 4px solid red;')",
-				digitali_logo);
+				login_page);
 		Thread.sleep(1000);
 
 		// digitali_logo is DISPLAYED or not
-		boolean res = digitali_logo.isDisplayed();
+		boolean res = login_page.isDisplayed();
 
 		if (res == true) {
 			System.out.println("digitali_logo is DISPLAYED");
@@ -1255,7 +1254,7 @@ public class UI {
 	// --------------------------------------------------------------------
 
 	@Test
-	public void Collection_List_Page() throws InterruptedException {
+	public void Collection_List_Page() throws InterruptedException {//Password with speacial characters prakash@4948
 		System.setProperty("webdriver.edge.driver",
 				"C:\\Users\\praka\\Downloads\\edgedriver_win64 (2)\\msedgedriver.exe");
 		// System.setProperty("webdriver.edge.driver",

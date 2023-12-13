@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="New.UI">
+      <class name="hive_pro.test">
         <methods>
-          <include name="Add_Content"/>
-          <include name="Home_Page"/>
+          <include name="test2"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- New.UI -->
+      </class> <!-- hive_pro.test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
